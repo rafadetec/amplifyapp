@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.App-moldura {
+  border: 2px #b68f61 solid;
+  width: 90%;
+  height: 100%;
+  padding: 25px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0c354b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,14 +32,22 @@
 }
 
 .App-link {
-  color: #61dafb;
+  text-align: right;
+  border: 1px solid #b68f61;
+  text-decoration: none;
+  color: #0c354b;
+  background-color: #b68f61;
+  margin: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotatey(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotatey(360deg)
   }
 }
