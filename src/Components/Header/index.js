@@ -1,4 +1,4 @@
-import logo from "../../assets/logo_emerj.png"
+import logo from "../../logo_emerj.png"
 import './header.css';
 
 
@@ -13,10 +13,11 @@ const header = () => {
                     </div>
                     <nav className="header-menu">
                         <ul>
-                            <li><a href="#Login">Login</a></li>
+                            <li><a href="/">Login</a></li>
                             <li><a href="#Home">Home</a></li>
-                            <li><a href="#Sobre">Sobre</a></li>
-                            <li><a href="#Contatos">Contatos</a></li>
+                            <li><a href="/Cadastro">Cadastro</a></li>
+                            <li><a href="/Sobre">Sobre</a></li>
+                            <li><a href="/Contatos">Contatos</a></li>
                         </ul>
                     </nav>
                 </div>

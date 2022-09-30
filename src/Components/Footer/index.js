@@ -1,26 +1,47 @@
-import logo from "../../assets/logo_emerj.png"
-import './footer.css';
+import React from "react";
+import styled from "styled-components";
 
+const Footer = () => {
+    
+    const Container = styled.div`
+    .footer {
+        background-color: #0c344c;
+        padding: 5px;
+        text-align: center;
+        font-size: 10px;
+        color: #fefefe;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    .footer a {
+        color: #fefefe;
+        text-decoration: none;
+    }
+     .footer p{
+        display: flex;
+        margin 1%;
+     }
+    `;
 
-const footer = () => {
-    return(
-        <div className="footer">
-            <div id="centro"></div>
-            <div id="Esquerda">
-                <img src={logo} alt = "Logo Emerj" className ="logo" />
-                <p>EMERJ-DETEC <br/> Departamento de Tecnologia da EMERJ</p>
-            </div>
-            <div id="Direta">
-                <ul>
-                    <li><a href="#Login">Login</a></li>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Contatos">Contatos</a></li>
-                </ul>
-            </div>
-            
-        </div>
-    )
+    return (
+        <Container>
+            <fooder className="footer">
+                <div className="container">
+                    <div className="content">
+                        <p>
+                            Escola da Magistratura do Estado do Rio de Janeiro - CNPJ 35.949.858/0001-81.
+                        </p>
+                        <p>
+                            Rua Dom Manuel, nº 25 - Centro - CEP 20010-090 - Telefone: (21) 3133-3369.
+                        </p>
+                    </div>
+                </div>
+            </fooder>
+        </Container>
+    );
 }
 
-export default footer;
+export default Footer;
